@@ -1,0 +1,141 @@
+# 🏡 Real Estate Price Prediction
+
+An end-to-end **Machine Learning project** that predicts residential property prices based on key features such as location, size, configuration, and amenities. The project follows **industry best practices** using pipelines, cross-validation, and deployment via **Streamlit**.
+
+---
+
+## 🚀 Project Overview
+
+Real estate prices are influenced by multiple numerical and categorical factors. This project builds a robust ML pipeline to:
+
+* Clean and preprocess real-world housing data
+* Train and tune a regression model
+* Predict property prices with an estimated range
+* Provide an interactive web interface for users
+
+---
+
+## 🧠 Key Features
+
+* End-to-end **scikit-learn Pipeline** (no data leakage)
+* Handles numerical & categorical variables
+* **Log transformation** of target variable to manage skewness
+* Hyperparameter tuning using **GridSearchCV**
+* Model evaluation with cross-validation
+* Deployed using **Streamlit** for real-time predictions
+
+---
+
+## 🛠️ Tech Stack
+
+* **Language:** Python
+* **Libraries:** Pandas, NumPy, Scikit-learn
+* **Model:** Random Forest Regressor
+* **Deployment:** Streamlit
+* **Version Control:** Git & GitHub
+
+---
+
+## 📊 Machine Learning Workflow
+
+1. Data Cleaning & Feature Engineering
+2. Preprocessing using ColumnTransformer
+3. Model training with RandomForestRegressor
+4. Hyperparameter tuning via GridSearchCV
+5. Model evaluation (R², error analysis)
+6. Price prediction with uncertainty range
+7. Deployment using Streamlit
+
+---
+
+## 📈 Model Details
+
+* **Target Variable:** Property Price
+* **Transformation:** `log1p` applied to reduce skew
+* **Evaluation Metric:** R² Score
+* **Cross-Validation:** 10-fold CV
+
+Prediction outputs include:
+
+* Estimated price
+* Lower & upper bound (price range)
+
+---
+
+## 🖥️ Streamlit Application
+
+The Streamlit app allows users to:
+
+* Input property details
+* Instantly view predicted price
+* See a realistic price range
+
+📸 *Screenshot of the app can be added here*
+
+---
+
+## 📁 Project Structure
+
+```
+Real-Estate-Analysis/
+│── app/                # Streamlit app
+│── model_selection/    # Training & model selection notebooks
+│── data/               # Dataset files
+│── README.md           # Project documentation
+│── requirements.txt    # Dependencies
+```
+
+---
+
+## ⚠️ Note on Model Files
+
+Trained model files (`.pkl`) are **not included** in this repository due to GitHub file size limitations.
+
+You can regenerate the model by running the training notebook/script provided in the project.
+
+---
+
+## 🧪 How to Run Locally
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/karansingh-chauhan/Real-Estate-Analysis.git
+```
+
+2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the Streamlit app
+
+```bash
+streamlit run app/app.py
+```
+
+---
+
+## 🎯 Learning Outcomes
+
+* Practical experience with ML pipelines
+* Handling categorical data in tree-based models
+* Preventing data leakage
+* Model tuning & evaluation
+* Deploying ML models
+
+---
+
+## 🤝 Feedback & Contributions
+
+Feedback, suggestions, and improvements are always welcome!
+
+---
+
+## 📌 Author
+
+**Karan Singh Chauhan**
+Aspiring Machine Learning Engineer / Data Scientist
+
+🔗 GitHub: [https://github.com/karansingh-chauhan](https://github.com/karansingh-chauhan)
